@@ -4,7 +4,8 @@ setfpscap(3)
 getgenv().gagConfig = {
     -- Event:
     CRAFT_EVENT = { "Anti Bee Egg" },
-    BUY_TRAVELING_MERCHANT = { "Bee Egg", "Loquat", "Feijoa", "Pitcher Plant" },
+    BUY_TRAVELING_MERCHANT = { "Bee Egg" },
+    CLAIM_FOOD_CONNOISSEUR_REWARD = { "Culinarian Chest", "Gorilla Chef", "Gourmet Egg", "Sunny-Side Chicken", "Pet Shard Aromatic" },
     
     -- General:
     AUTO_UPDATE_RESTART = true,
@@ -14,65 +15,28 @@ getgenv().gagConfig = {
     ADD_FRIEND = false,
     OPEN_ALL_SEED_PACK = true,
 
-    MAX_PLANTS = 150,
-    DESTROY_UNTIL_MIN_PLANTS = 100,
-    DELETE_PLANTS_AFTER_MAX = { "Carrot", "Strawberry", "Coconut", "Blueberry", "Rose", "Orange Tulip", "Dezen", "Artichoke", "Onion", "Daffodil", "Cauliflower", "Raspberry", "Foxglove", "Horsetail", "Twisted Tangle", "Jalapeno", "Watermelon", "Green Apple", "Apple", "Lilac", "Taro Flower", "Rafflesia", "Lingonberry", "Lucky Bamboo", "Veinpetal", "Crown Melon", "Peach", "Pineapple", "Amber Spine", "Cactus", "Dragon Fruit", "Mango", "Kiwi", "Bell Pepper", "Prickly Pear", "Pink Lily", "Purple Dahlia", "Tall Asparagus", "Sugarglaze", "Mushroom", "Grand Volcania", "Sunflower", "Chocolate Carrot", "Red Lollipop", "Nightshade", "Crocus", "Lavender", "Manuka Flower", "Wild Carrot", "Stonebite", "Candy Sunflower", "Peace Lily", "Mint", "Blue Lollipop", "Glowshroom", "Dandelion", "Nectarshade", "Succulent", "Bee Balm", "Pear", "Delphinium", "Liberty Lily", "Paradise Petal", "Cranberry", "Durian", "Papaya", "Moonflower", "Starfruit", "Lumira", "Nectar Thorn", "Cantaloupe", "Aloe Vera", "Firework Flower", "White Mulberry", "Dragon Sapling", "Horned Dinoshroom", "Boneboo", "Fruitball", "Enkaku", "Sakura Bush", "Easter Egg", "Eggplant", "Passionfruit", "Lemon", "Moonglow", "Moon Melon", "Blood Banana", "Celestiberry", "Guanabana", "Nectarine", "Honeysuckle", "Suncoil", "Bendboo", "Cocovine", "Parasol Flower", "Lily Of The Valley", "Firefly Fern", "Moon Mango", "Candy Blossom", "Cherry Blossom", "Lotus", "Venus Fly Trap", "Rosy Delight", "Traveler's Fruit", "Fossilight", "Tranquil Bloom", "Elephant Ears", "Bone Blossom", "Pink Tulip", "Noble Flower", "Purple Cabbage", "Sinisterdrip", "Mega Mushroom", "Ice Cream Bean", "Lime", "Crimson Vine", "Zenflare", "Serenity", "Zen Rocks", "Hinomai", "Monobloom" },
+    MAX_PLANTS = 200,
+    DESTROY_UNTIL_MIN_PLANTS = 0,
+    DELETE_PLANTS_AFTER_MAX = { "Elder Strawberry", "Giant Pinecone", "Tranquil Bloom", "Dragon Fruit", "Ember Lily", "Apple", "Grape", "Burning Bud", "Cacao", "Maple Apple", "Beanstalk" },
+    LIMIT_PLANT_SEED = { ["Corn"] = 43, ["Coconut"] = 7, ["Mango"] = 15, ["Tomato"] = 25, ["Pepper"] = 15 },
     
-    BUY_EGGS = { "Paradise Egg", "Mythical Egg", "Rare Summer Egg", "Common Summer Egg" },
-    PLANT_EGGS = { "Gourmet Egg", "Zen Egg", "Bug Egg", "Paradise Egg", "Common Summer Egg" },
+    BUY_EGGS = { "Bug Egg", "Bee Egg", "Paradise Egg", "Mythical Egg", "Rare Summer Egg", "Common Summer Egg" },
+    PLANT_EGGS = { "Zen Egg", "Gourmet Egg", "Common Summer Egg" },
     
-    BUY_SEED_SHOP = { "Elder Strawberry", "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Cacao", "Pepper", "Mushroom", "Grape", ["Coconut"] = 2, ["Bamboo"] = 5, ["Pumpkin"] = 3, ["Tomato"] = 5 },
-    KEEP_SEEDS = { "Bone Blossom" },
-    KEEP_SEEDS_AFTER_MAX_PLANTS = { "Carrot", "Strawberry", "Blueberry", "Tomato", "Apple" },
-    LIMIT_PLANT_SEED = {
-    ["Carrot"] = 0, ["Strawberry"] = 0, ["Blueberry"] = 0, ["Rose"] = 0, ["Orange Tulip"] = 0,
-    ["Dezen"] = 0, ["Artichoke"] = 0, ["Onion"] = 0, ["Tomato"] = 5, ["Daffodil"] = 0,
-    ["Cauliflower"] = 0, ["Raspberry"] = 0, ["Foxglove"] = 0, ["Corn"] = 5, ["Horsetail"] = 0,
-    ["Twisted Tangle"] = 0, ["Jalapeno"] = 0, ["Watermelon"] = 0, ["Pumpkin"] = 5,
-    ["Avocado"] = 5, ["Green Apple"] = 0, ["Apple"] = 0, ["Banana"] = 0, ["Lilac"] = 0,
-    ["Taro Flower"] = 0, ["Bamboo"] = 5, ["Rafflesia"] = 0, ["Lingonberry"] = 0,
-    ["Lucky Bamboo"] = 0, ["Veinpetal"] = 0, ["Crown Melon"] = 0, ["Peach"] = 0,
-    ["Pineapple"] = 0, ["Amber Spine"] = 0, ["Coconut"] = 2, ["Cactus"] = 0,
-    ["Dragon Fruit"] = 0, ["Mango"] = 0, ["Kiwi"] = 4, ["Bell Pepper"] = 0,
-    ["Prickly Pear"] = 0, ["Pink Lily"] = 0, ["Purple Dahlia"] = 0, ["Tall Asparagus"] = 0,
-    ["Sugarglaze"] = 0, ["Grape"] = 5, ["Loquat"] = 5, ["Mushroom"] = 0, ["Pepper"] = 5,
-    ["Cacao"] = 5, ["Feijoa"] = 5, ["Pitcher Plant"] = 5, ["Grand Volcania"] = 0,
-    ["Sunflower"] = 0, ["Grand Tomato"] = 5, ["Taco Fern"] = 5, ["Beanstalk"] = 3,
-    ["Ember Lily"] = 10, ["Sugar Apple"] = 10, ["Burning Bud"] = 3, ["Giant Pinecone"] = 5,
-    ["Elder Strawberry"] = 5, ["Chocolate Carrot"] = 0, ["Red Lollipop"] = 0,
-    ["Nightshade"] = 0, ["Crocus"] = 0, ["Lavender"] = 0, ["Manuka Flower"] = 0,
-    ["Wild Carrot"] = 0, ["Stonebite"] = 0, ["Candy Sunflower"] = 0, ["Peace Lily"] = 0,
-    ["Mint"] = 0, ["Blue Lollipop"] = 0, ["Glowshroom"] = 0, ["Dandelion"] = 0,
-    ["Nectarshade"] = 0, ["Succulent"] = 0, ["Bee Balm"] = 0, ["Pear"] = 0,
-    ["Delphinium"] = 0, ["Liberty Lily"] = 0, ["Paradise Petal"] = 0, ["Cranberry"] = 0,
-    ["Durian"] = 0, ["Papaya"] = 0, ["Moonflower"] = 0, ["Starfruit"] = 0,
-    ["Lumira"] = 0, ["Violet Corn"] = 0, ["Nectar Thorn"] = 0, ["Cantaloupe"] = 0,
-    ["Aloe Vera"] = 0, ["Firework Flower"] = 0, ["White Mulberry"] = 0,
-    ["Dragon Sapling"] = 0, ["Horned Dinoshroom"] = 0, ["Boneboo"] = 0,
-    ["Fruitball"] = 0, ["Enkaku"] = 0, ["Sakura Bush"] = 0, ["Easter Egg"] = 0,
-    ["Eggplant"] = 0, ["Passionfruit"] = 0, ["Lemon"] = 0, ["Moonglow"] = 0,
-    ["Moon Melon"] = 0, ["Blood Banana"] = 0, ["Celestiberry"] = 0, ["Guanabana"] = 0,
-    ["Nectarine"] = 0, ["Honeysuckle"] = 0, ["Suncoil"] = 0, ["Bendboo"] = 0,
-    ["Cocovine"] = 0, ["Parasol Flower"] = 0, ["Lily Of The Valley"] = 0,
-    ["Firefly Fern"] = 0, ["Moon Mango"] = 0, ["Candy Blossom"] = 0,
-    ["Cherry Blossom"] = 0, ["Lotus"] = 0, ["Venus Fly Trap"] = 0, ["Rosy Delight"] = 0,
-    ["Traveler's Fruit"] = 0, ["Fossilight"] = 0, ["Tranquil Bloom"] = 0,
-    ["Elephant Ears"] = 0, ["Bone Blossom"] = 0, ["Pink Tulip"] = 0,
-    ["Noble Flower"] = 0, ["Purple Cabbage"] = 0, ["Sinisterdrip"] = 0,
-    ["Mega Mushroom"] = 0, ["Ice Cream Bean"] = 0, ["Lime"] = 0, ["Crimson Vine"] = 0,
-    ["Zenflare"] = 0, ["Serenity"] = 0, ["Zen Rocks"] = 0, ["Hinomai"] = 0,
-    ["Monobloom"] = 0 },
+    BUY_SEED_SHOP = { "Elder Strawberry", "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Cacao", "Pepper", "Mushroom", "Grape", ["Corn"] = 50, ["Tomato"] = 50, ["Coconut"] = 10, ["Mango"] = 20  },
+    KEEP_SEEDS = { "Elder Strawberry", "Giant Pinecone", "Burning Bud", "Ember Lily", "Beanstalk", "Cacao", "Mushroom", "Grape", "Onion", "Pumpkin", "Watermelon", "Serenity", "Tall Asparagus", "Fruitball", "Bamboo", "Taro Flower", "Carrot", "Hinomai", "Orange Tulip", "Monoblooma", "Artichoke", "Strawberry", "Lucky Bamboo", "Daffodil", "Sugarglaze", "Crown Melon", "Blueberry", "Jalapeno", "Maple Apple", "Cactus", "Spiked Mango", "Zen Rocks", "Enkaku", "Tranquil Bloom", "Apple", "Dragon Fruit", "Taco Fern", "Grand Tomato", "Dezen", "Twisted Tangle", "Veinpetal", "Horsetail", "Lingonberry", "Amber Spine", "Rose", "Foxglove", "Lilac", "Pink Lily", "Purple Dahlia", "Sunflower", "Butternut Squash", "Spring Onion", "Pricklefruit", "Bitter Melon", "King Cabbage", "Badiands Pepper", "Rhubarb" },
+    KEEP_SEEDS_AFTER_MAX_PLANTS = { "Elder Strawberry", "Giant Pinecone", "Burning Bud", "Ember Lily", "Beanstalk", "Cacao", "Mushroom", "Grape", "Onion", "Pumpkin", "Watermelon", "Serenity", "Tall Asparagus", "Fruitball", "Bamboo", "Taro Flower", "Carrot", "Hinomai", "Orange Tulip", "Monoblooma", "Artichoke", "Strawberry", "Lucky Bamboo", "Daffodil", "Sugarglaze", "Crown Melon", "Blueberry", "Jalapeno", "Maple Apple", "Cactus", "Spiked Mango", "Zen Rocks", "Enkaku", "Tranquil Bloom", "Apple", "Dragon Fruit", "Taco Fern", "Grand Tomato", "Dezen", "Twisted Tangle", "Veinpetal", "Horsetail", "Lingonberry", "Amber Spine", "Rose", "Foxglove", "Lilac", "Pink Lily", "Purple Dahlia", "Sunflower" },
     
     FAVOURITE_FRUIT_MUTATIONS = {},  -- Stop Autosell
     SKIP_HARVEST_MUTATIONS = {},  -- Stop Harvest
 
-    KEEP_PETS = { "Corrupted Kitsune", "Kitsune", "Dragonfly", "Mimic Octopus", "Red Fox", ["Capybara"] = 2, ["Starfish"] = 35, ["French Fry Ferret"] = 2, ["Spaghetti Sloth"] = 1 },
-    KEEP_PETS_WEIGHT = { ["Red Giant Ant"] = 5 },
+    KEEP_PETS = { "Corrupted Kitsune", "Kitsune", "Dragonfly", "Mimic Octopus", "Red Fox", ["Sunny-Side Chicken"] = 8, ["Hotdog Daschund"] = 8, "Lobster Thermidor", ["Gorilla Chef"] = 8, ["Capybara"] = 2, ["Starfish"] = 30, ["French Fry Ferret"] = 2, ["Spaghetti Sloth"] = 1 },
+    KEEP_PETS_WEIGHT = { ["Red Giant Ant"] = 6, ["Crab"] = 6, ["Seagull"] = 6, ["Flamingo"] = 6, ["Toucan"] = 6, ["Sea Turtle"] = 6, ["Orangutan"] = 6, ["Seal"] = 6, ["Grey Mouse"] = 6, ["Squirrel"] = 6, ["Brown Mouse"] = 6, ["Red Fox"] = 6, ["Ostrich"] = 6, ["Peacock"] = 6, ["Capybara"] = 6, ["Scarlet Macaw"] = 6, ["Caterpillar"] = 6, ["Snail"] = 6, ["Giant Ant"] = 6, ["Praying Mantis"] = 6, ["Bagel Bunny"] = 6, ["Pancake Mole"] = 6, ["Sushi Bear"] = 6, ["Spaghetti Sloth"] = 6, ["Nihonzaru"] = 6, ["Shiba Inu"] = 6, ["Tanchozuru"] = 6, ["Tanuki"] = 6, ["Kappa"] = 6 },
     KEEP_PETS_AGE = { ["Starfish"] = 75 },
 
-    EQUIP_PETS = { ["Capybara"] = 1, ["Starfish"] = 7 },
+    EQUIP_PETS = { ["Starfish"] = 8 },
     USE_PETS_FOR_UPGRADE_SLOT = { "Starfish" },
-    REMOVE_PET_MAX_UPGRADE = { "Capybara", "Starfish" },  -- Unequip from garden
+    REMOVE_PET_MAX_UPGRADE = { "Red Giant Ant" },  -- Unequip from garden
 
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket" },
     USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Grandmaster Sprinkler" },
