@@ -5,13 +5,14 @@ getgenv().gagConfig = {
     -- Event:
     CRAFT_EVENT = { "Anti Bee Egg" },
     BUY_TRAVELING_MERCHANT = { "Bee Egg" },
-    CLAIM_FOOD_CONNOISSEUR_REWARD = { "Culinarian Chest", "Gorilla Chef", "Gourmet Egg", "Sunny-Side Chicken", "Pet Shard Aromatic" },
+    CLAIM_FOOD_CONNOISSEUR_REWARD = { "Gorilla Chef", "Culinarian Chest", "Gourmet Egg", "Sunny-Side Chicken", "Cooking Cauldron" },
+    FORCE_COOK_MUTATION_ONLY = true,
     
     -- General:
     AUTO_UPDATE_RESTART = true,
     REDEEM_CODES = {},
-    EXTRA_PET_SLOTS = 5,
-    EXTRA_EGG_SLOTS = 5,
+    EXTRA_PET_SLOTS = 4,
+    EXTRA_EGG_SLOTS = 4,
     ADD_FRIEND = false,
     OPEN_ALL_SEED_PACK = true,
 
@@ -19,6 +20,7 @@ getgenv().gagConfig = {
     DESTROY_UNTIL_MIN_PLANTS = 0,
     DELETE_PLANTS_AFTER_MAX = { "Elder Strawberry", "Giant Pinecone", "Tranquil Bloom", "Dragon Fruit", "Ember Lily", "Apple", "Grape", "Burning Bud", "Cacao", "Maple Apple", "Beanstalk" },
     LIMIT_PLANT_SEED = { ["Corn"] = 43, ["Coconut"] = 7, ["Mango"] = 15, ["Tomato"] = 25, ["Pepper"] = 15 },
+    PLACE_COSMETIC = {"Cooking Cauldron"},
     
     BUY_EGGS = { "Bug Egg", "Bee Egg", "Paradise Egg", "Mythical Egg", "Rare Summer Egg", "Common Summer Egg" },
     PLANT_EGGS = { "Zen Egg", "Gourmet Egg", "Common Summer Egg" },
@@ -30,13 +32,13 @@ getgenv().gagConfig = {
     FAVOURITE_FRUIT_MUTATIONS = {},  -- Stop Autosell
     SKIP_HARVEST_MUTATIONS = {},  -- Stop Harvest
 
-    KEEP_PETS = { "Corrupted Kitsune", "Kitsune", "Dragonfly", "Mimic Octopus", "Red Fox", ["Sunny-Side Chicken"] = 8, ["Hotdog Daschund"] = 8, "Lobster Thermidor", ["Gorilla Chef"] = 8, ["Capybara"] = 2, ["Starfish"] = 30, ["French Fry Ferret"] = 2, ["Spaghetti Sloth"] = 1 },
+    KEEP_PETS = { "Corrupted Kitsune", "Kitsune", "Dragonfly", "Mimic Octopus", "Red Fox", ["Sunny-Side Chicken"] = 4, ["Sushi Bear"] = 4, ["Hotdog Daschund"] = 8, "Lobster Thermidor", ["Gorilla Chef"] = 8, ["Capybara"] = 2, ["Starfish"] = 30, ["French Fry Ferret"] = 2, ["Spaghetti Sloth"] = 1 },
     KEEP_PETS_WEIGHT = { ["Red Giant Ant"] = 6, ["Crab"] = 6, ["Seagull"] = 6, ["Flamingo"] = 6, ["Toucan"] = 6, ["Sea Turtle"] = 6, ["Orangutan"] = 6, ["Seal"] = 6, ["Grey Mouse"] = 6, ["Squirrel"] = 6, ["Brown Mouse"] = 6, ["Red Fox"] = 6, ["Ostrich"] = 6, ["Peacock"] = 6, ["Capybara"] = 6, ["Scarlet Macaw"] = 6, ["Caterpillar"] = 6, ["Snail"] = 6, ["Giant Ant"] = 6, ["Praying Mantis"] = 6, ["Bagel Bunny"] = 6, ["Pancake Mole"] = 6, ["Sushi Bear"] = 6, ["Spaghetti Sloth"] = 6, ["Nihonzaru"] = 6, ["Shiba Inu"] = 6, ["Tanchozuru"] = 6, ["Tanuki"] = 6, ["Kappa"] = 6 },
     KEEP_PETS_AGE = { ["Starfish"] = 75 },
 
-    EQUIP_PETS = { ["Starfish"] = 8 },
+    EQUIP_PETS = { ["Sushi Bear"] = 4, ["Spaghetti Sloth"] = 2, ["Hotdog Daschund"] = 2, ["Sunny-Side Chicken"] = 1, ["Gorilla Chef"] = 4 },
     USE_PETS_FOR_UPGRADE_SLOT = { "Starfish" },
-    REMOVE_PET_MAX_UPGRADE = { "Red Giant Ant" },  -- Unequip from garden
+    REMOVE_PET_MAX_UPGRADE = { "Starfish" },  -- Unequip from garden
 
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket" },
     USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Grandmaster Sprinkler" },
