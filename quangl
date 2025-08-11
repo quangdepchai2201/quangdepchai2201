@@ -174,7 +174,7 @@ getgenv().ConfigsKaitun = {
 		Instant_Sell = {
 			"Nihonzaru",
 			"Shiba Inu",
-			"Bagel Bunny,
+			"Bagel Bunny",
 			"Tanuki",
 		}
 	},
