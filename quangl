@@ -143,7 +143,7 @@ getgenv().ConfigsKaitun = {
 	},
 
 	Pets = {
-		["Start Delete Pet At"] = 60,
+		["Start Delete Pet At"] = 50,
 		["Upgrade Slot"] = {
 			["Pet"] = {
 				["Starfish"] = { 8, 100, 1, true }, -- the "true" on the last is auto equip (use for like only need to use for upgrade pet)
@@ -170,8 +170,8 @@ getgenv().ConfigsKaitun = {
 			"Kitsune",
 			"Dragonfly",
 			"Mimic Octopus",
-			"Sushi Bear",
 			["Starfish"] = 10,
+			["Sushi Bear"] = 4,
 		},
 		LockPet_Weight = 7, -- if Weight >= 10 they will locked
 	},
