@@ -150,9 +150,11 @@ getgenv().ConfigsKaitun = {
 			},
 			["Limit Upgrade"] = 4,
 			["Equip When Done"] = {
-				["Gorilla Chef"] = { 7, 100, 2 },
+				["Gorilla Chef"] = { 6, 100, 2 },
 				["Sunny-Side Chicken"] = { 1, 100, 1 },
 				["Sushi Bear"] = { 4, 100, 3 },
+				["Tanchozuru"] = { 2, 100, 4 },
+				["Kappa"] = { 2, 100, 5 },
 			},
 		},
 		Favorite_LockedPet = true,
@@ -162,13 +164,13 @@ getgenv().ConfigsKaitun = {
 			"Spaghetti Sloth",
 			"Lobster Thermidor",
 			"Corrupted Kitsune",
-			"Tanchozuru",
 			"Kappa",
 			"Kitsune",
 			"Dragonfly",
 			"Mimic Octopus",
 			["Starfish"] = 10,
 			["Sushi Bear"] = 4,
+			["Tanchozuru"] = 4,
 		},
 		LockPet_Weight = 7, -- if Weight >= 10 they will locked
 		Instant_Sell = {
@@ -176,6 +178,8 @@ getgenv().ConfigsKaitun = {
 			"Shiba Inu",
 			"Bagel Bunny",
 			"Tanuki",
+			"Pancake Mole",
+			"Bacon Pig",
 		}
 	},
 
