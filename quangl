@@ -152,6 +152,7 @@ getgenv().ConfigsKaitun = {
 			["Equip When Done"] = {
 				["Gorilla Chef"] = { 7, 100, 2 },
 				["Sunny-Side Chicken"] = { 1, 100, 1 },
+				["Sushi Bear"] = { 4, 100, 3 },
 			},
 		},
 		Favorite_LockedPet = true,
