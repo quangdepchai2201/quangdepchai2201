@@ -144,7 +144,7 @@ getgenv().ConfigsKaitun = {
 				["Spaghetti Sloth"] = { 4, 100, 4 },
 			},
 		},
-		Unfavorite_AllPet = false,
+		Unfavorite_AllPet = true,
 		Favorite_LockedPet = true,
 		Locked_Pet_Age = 80, -- pet that age > 80 will lock
 		Locked = {
