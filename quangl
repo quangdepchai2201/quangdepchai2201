@@ -144,19 +144,18 @@ getgenv().ConfigsKaitun = {
 				["Spaghetti Sloth"] = { 4, 100, 4 },
 			},
 		},
+		Unfavorite_AllPet = false,
 		Favorite_LockedPet = true,
 		Locked_Pet_Age = 80, -- pet that age > 80 will lock
 		Locked = {
 			"French Fry Ferret",
-			"Spaghetti Sloth",
 			"Lobster Thermidor",
 			"Corrupted Kitsune",
-			"Kappa",
 			"Kitsune",
 			"Dragonfly",
 			"Mimic Octopus",
 			["Starfish"] = 10,
-			["Sunny-Side Chicken"] = 8,
+			["Sunny-Side Chicken"] = 4,
 		},
 		LockPet_Weight = 7, -- if Weight >= 10 they will locked
 		Instant_Sell = {
