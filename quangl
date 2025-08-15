@@ -141,13 +141,17 @@ getgenv().ConfigsKaitun = {
 		},
 		LockPet_Weight = 7, -- if Weight >= 10 they will locked
 		Instant_Sell = {
-			"Nihonzaru",
 			"Shiba Inu",
 			"Bagel Bunny",
 			"Tanuki",
 			"Pancake Mole",
 			"Bacon Pig",
 			"Hotdog Daschund",
+			"Crab",
+			"Mochi Mouse",
+			"Giant Ant",
+			"Seagull",
+			"Ostrich",
 		}
 	},
 
