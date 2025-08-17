@@ -1,0 +1,60 @@
+local keys = {  -- Add as many key
+    "cyGnzuTqxQQoWuLYeNhytEtIkOZZfGBy", 
+    "QDHjcAnSUErcfUuJdbirtWhbLvQpaKGv", 
+}
+
+script_key = keys[math.random(#keys)];
+setfpscap(3)
+
+getgenv().gagConfig = {
+    -- Event:
+    CRAFT_EVENT = { "Anti Bee Egg" },
+    BUY_TRAVELING_MERCHANT = { "Bee Egg" },
+    MAX_EVENT_RESTOCK_SHECKLES = 200_000_001_000, -- Restock stop at 48m
+    BUY_EVENT_SHOP = { "Sprout Egg" },
+    
+    -- General:
+    AUTO_UPDATE_RESTART = true,
+    REDEEM_CODES = {},
+    EXTRA_PET_SLOTS = 5,
+    EXTRA_EGG_SLOTS = 5,
+    ADD_FRIEND = false,
+    OPEN_ALL_SEED_PACK = true,
+
+    MAX_PLANTS = 130,
+    DESTROY_UNTIL_MIN_PLANTS = 0,
+    DELETE_PLANTS_AFTER_MAX = { "Gleamroot", "Tomato", "Corn", "Bamboo", "Flare Daisy", "Poseidon Plant", "Duskpuff", "Badlands Pepper", "Mangosteen" },
+    LIMIT_PLANT_SEED = { ["Coconut"] = 5, ["Sugarglaze"] = 5, ["Grape"] = 5, ["Ember Lily"] = 10, ["Apple"] = 5, ["Spiked Mango"] = 5, ["Taro Flower"] = 5, ["Pepper"] = 5, ["Mango"] = 5, ["Blueberry"] = 3, ["Sugar Apple"] = 30, ["Beanstalk"] = 5, ["Serenity"] = 10 }
+    
+    BUY_EGGS = { "Bug Egg", "Bee Egg", "Paradise Egg", "Mythical Egg", "Rare Summer Egg", "Common Summer Egg" },
+    PLANT_EGGS = { "Sprout Egg", "Zen Egg", "Gourmet Egg", "Bug Egg", "Paradise Egg", "Common Summer Egg", },
+    
+    BUY_SEED_SHOP = { "Romanesco", "Elder Strawberry", "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Cacao", "Pepper", "Mushroom", "Mango", "Dragon Fruit", "Coconut", "Carrot", "Grape" },
+    KEEP_SEEDS = { "Elder Strawberry", "Giant Pinecone", "Burning Bud", "Mushroom", "Onion", "Pumpkin", "Watermelon", "Tall Asparagus", "Fruitball", "Taro Flower", "Orange Tulip", "Monoblooma", "Artichoke", "Strawberry", "Lucky Bamboo", "Daffodil", "Crown Melon", "Jalapeno", "Maple Apple", "Cactus", "Zen Rocks", "Enkaku", "Tranquil Bloom", "Taco Fern", "Grand Tomato", "Dezen", "Twisted Tangle", "Veinpetal", "Horsetail", "Lingonberry", "Amber Spine", "Rose", "Foxglove", "Lilac", "Pink Lily", "Purple Dahlia", "Sunflower", "Butternut Squash", "Spring Onion", "Pricklefruit", "Bitter Melon", "King Cabbage", "Badlands Pepper", "Rhubarb", "Tomato", "Corn", "Bamboo", "Flare Daisy", "Duskpuff", "Mangosteen", "Poseidon Plant", "Gleamroot", "Princess Thorn", "Mandrake", "Canary Melon", "Amberheart", "Romanesco" },
+    KEEP_SEEDS_AFTER_MAX_PLANTS = { "Elder Strawberry", "Giant Pinecone", "Burning Bud", "Mushroom", "Onion", "Pumpkin", "Watermelon", "Tall Asparagus", "Fruitball", "Taro Flower", "Orange Tulip", "Monoblooma", "Artichoke", "Strawberry", "Lucky Bamboo", "Daffodil", "Crown Melon", "Jalapeno", "Maple Apple", "Cactus", "Zen Rocks", "Enkaku", "Tranquil Bloom", "Taco Fern", "Grand Tomato", "Dezen", "Twisted Tangle", "Veinpetal", "Horsetail", "Lingonberry", "Amber Spine", "Rose", "Foxglove", "Lilac", "Pink Lily", "Purple Dahlia", "Sunflower", "Butternut Squash", "Spring Onion", "Pricklefruit", "Bitter Melon", "King Cabbage", "Badlands Pepper", "Rhubarb", "Tomato", "Corn", "Bamboo", "Flare Daisy", "Duskpuff", "Mangosteen", "Poseidon Plant", "Gleamroot", "Princess Thorn", "Mandrake", "Canary Melon", "Amberheart", "Romanesco" },
+    
+    FAVOURITE_FRUIT_MUTATIONS = {},
+    SKIP_HARVEST_MUTATIONS = {},
+
+    KEEP_PETS = { "Golden Goose", "French Fry Ferret", "Corrupted Kitsune", "Kitsune", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", ["Starfish"] = 8, ["Seal"] = 8, "Lobster Thermidor", ["Hotdog Daschund"] = 8, ["Sunny-Side Chicken"] = 5, ["Gorilla Chef"] = 5 },
+    KEEP_PETS_WEIGHT = 7,
+    KEEP_PETS_AGE = 80,
+
+    EQUIP_PETS = { ["Hotdog Daschund"] = 3, ["Sunny-Side Chicken"] = 5 },
+    USE_PETS_FOR_UPGRADE_SLOT = { "Starfish" },
+    REMOVE_PET_MAX_UPGRADE = { "Capybara", "Starfish" },
+
+    BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket" },
+    USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Grandmaster Sprinkler" },
+
+    PET_WEBHOOK_URL = "https://discord.com/api/webhooks/1397396450404728934/a13XJ-ZPxjnQedqOxBTjCiB5bSiICrOGuJ6Z7z-lMVLX3DYH-hRPJBK-qU3cxgjGBIJH",
+    SEED_WEBHOOK_URL = "", 
+    NOTIFY_PETS = { "Kitsune" },
+    NOTIFY_PETS_WEIGHT = 7,
+    DISCORD_ID = "1189850586468851765",
+    WEBHOOK_NOTE = "cho rach",
+    SHOW_WEBHOOK_USERNAME = true,
+    SHOW_WEBHOOK_JOBID = true,
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6cb882027ef5de19462b160764dcfb53.lua"))()
